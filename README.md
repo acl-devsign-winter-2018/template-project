@@ -11,9 +11,14 @@ The source folder (`src`) contains the original source code that developers writ
 
 The distribution build folder (`dist`) contains the built files for a production build.
 
-## Webpack Config
+## Module Html
 
-Current webpack config has two parts
-1. Bundle JavaScript (necessary for webpack, even if not needed yet in project)
-2. `index.html` - the html page
+The current setup allows modular html by using the `${...}` JavaScript interpolator and a require of the 
+other html file to include:
+
+```html
+<body>
+  ${require('./app.html')}
+</body>
+```
  
