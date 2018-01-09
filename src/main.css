@@ -1,0 +1,12 @@
+ul {
+  margin: 0;
+
+  li {
+    list-style: none;
+    color: steelblue;
+
+    &:hover {
+      color: pink;
+    }
+  }
+}
